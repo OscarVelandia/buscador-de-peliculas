@@ -40,13 +40,16 @@ window.onload = () => {
         //uso el método encodeURIComponent para que acepte los espacios.
         nombrePelicula = encodeURIComponent(document.querySelector('input[name="buscador"]').value);
         //Agrega los márgenes de la nueva posición.
+        document.getElementById('logo').style.fontSize = "2rem"
         document.querySelector('header').style.marginLeft = "2%";
         document.querySelector('header').style.marginTop = "2%";
         //Cambio la orientación del menu
         document.querySelector('header').style.flexDirection = "row";  
+        //Cambio del tamaño de la lupa
+        document.querySelector('button').style.fontSize = "1.4rem";
         //Cambio del tamaño del buscador.
-        document.getElementById('buscador').style.height = "2.8rem";
-        document.getElementById('buscador').style.width = "80%";
+        document.getElementById('buscador').style.height = "1.8rem";
+        document.getElementById('buscador').style.width = "70%";
         document.getElementById('buscador').style.marginLeft = "2rem";  
         //Consulta la API
         realizarLaConexion();
